@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pack2.AnimActivity">
+    <TextView
+        android:id="@+id/txtTop1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:text="Button"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/top_1"
+        app:layout_constraintTop_toBottomOf="@id/txtTop1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Default"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Background"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Foreground"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+            android:background="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Bg Fg"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/top_2"
+        app:layout_constraintTop_toBottomOf="@id/top_1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Bg custom"
+            android:background="@drawable/custom_ripple_1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_1"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Fg custom"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_1"
+            android:background="@drawable/custom_ripple_1"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Bg Fg Custom"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/top_3"
+        app:layout_constraintTop_toBottomOf="@id/top_2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:textColor="#ff0000"
+            android:text="Bg custom 2"
+            android:background="@drawable/custom_ripple_2"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_2"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Fg custom 2"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_2"
+            android:background="@drawable/custom_ripple_2"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Bg Fg Custom 2"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_4"
+        app:layout_constraintTop_toBottomOf="@id/top_3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:textColor="#ff0000"
+            android:text="Bg custom 3"
+            android:background="@drawable/custom_ripple_3"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_3"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Fg custom 3"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_3"
+            android:background="@drawable/custom_ripple_3"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Bg Fg Custom 2"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_5"
+        app:layout_constraintTop_toBottomOf="@id/top_4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:textColor="#ff0000"
+            android:text="Bg custom 4"
+            android:background="@drawable/custom_ripple_4"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_4"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Fg custom 4"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:foreground="@drawable/custom_ripple_4"
+            android:background="@drawable/custom_ripple_4"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:text="Bg Fg Custom 4"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,9 @@ import com.excalibur.funwithlist.R
 import com.excalibur.funwithlist.pack1.extension.Extension
 import com.excalibur.funwithlist.pack1.model.Test
 import kotlinx.android.synthetic.main.list_item_main.view.*
+import kotlinx.android.synthetic.main.list_item_main.view.view_list_repo_action_container
+import kotlinx.android.synthetic.main.list_item_main.view.view_list_repo_action_delete
+import kotlinx.android.synthetic.main.list_item_with_single_delete.view.*
 import kotlinx.android.synthetic.main.view_list_main_content.view.*
 
 class DummyAdapter : RecyclerView.Adapter<DummyAdapter.BaseViewHolder>() {
@@ -67,6 +70,11 @@ class DummyAdapter : RecyclerView.Adapter<DummyAdapter.BaseViewHolder>() {
 
     override fun onBindViewHolder(holderBase: BaseViewHolder, position: Int) {
         holderBase.onBind(list[position])
+        if(holderBase is ItemViewHolderWithRecyclerWidth){
+            holderBase.itemView.view_list_repo_action_delete.setOnClickListener {
+                doDelete(holderBase.adapterPosition)
+            }
+        }
     }
 
     override fun getItemCount(): Int {
@@ -79,6 +87,11 @@ class DummyAdapter : RecyclerView.Adapter<DummyAdapter.BaseViewHolder>() {
             itemView.text_list_main_title.text = test.title
             itemView.text_list_main_index.text = test.id.toString()
         }
+    }
+
+    private fun doDelete(adapterPosition : Int){
+        list.removeAt(adapterPosition)
+        notifyItemRemoved(adapterPosition)
     }
 
     /**

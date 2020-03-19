@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FunWithList</string>
     <string name="item_helper_recyclerview">Item Helper RecyclerView</string>
+    <string name="ripple">Ripple</string>
+    <string name="animation">Animation</string>
+    <string name="opencv">OpenCV</string>
 </resources>
