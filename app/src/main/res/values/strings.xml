@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FunWithList</string>
+    <string name="item_helper_recyclerview">Item Helper RecyclerView</string>
+</resources>
