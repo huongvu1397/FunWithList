@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:splitMotionEvents="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:id="@+id/cvPhoto"
+        app:cardCornerRadius="0dp"
+        android:foreground="?selectableItemBackground"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+        <RelativeLayout
+            android:splitMotionEvents="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imgPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+             />
+
+            <TextView
+                android:id="@+id/tvSelectedCount"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_2sdp"
+
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:singleLine="true"
+
+                android:textSize="@dimen/_8ssp"
+                android:visibility="gone"
+                tools:text="120"
+                tools:visibility="visible" />
+            <ImageView
+                android:id="@+id/ivStroke"
+                android:layout_width="match_parent"
+
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

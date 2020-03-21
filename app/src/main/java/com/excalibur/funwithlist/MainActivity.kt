@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.excalibur.funwithlist.pack1.ItemHelperSwipeListActivity
 import com.excalibur.funwithlist.pack2.AnimActivity
 import com.excalibur.funwithlist.pack3.OpenCVActivity
+import com.excalibur.funwithlist.pack5.AllVideoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         btn3.setOnClickListener {
             startActivity(Intent(this,
                 OpenCVActivity::class.java))
+        }
+        btn4.setOnClickListener {
+            startActivity(Intent(this,
+                AllVideoActivity::class.java))
         }
     }
 }

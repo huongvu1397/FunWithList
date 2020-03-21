@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    tools:background="#ffffff"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/llItemBucket"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp">
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="@dimen/_14sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp">
+            <ImageView
+                android:id="@+id/imgBucket"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_marginStart="@dimen/_26sdp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvBucketName"
+                android:textSize="@dimen/_14ssp"
+                android:gravity="center_vertical"
+                tools:text="All photo"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/tvBucketPhotoCount"
+                android:textSize="@dimen/_10ssp"
+                android:gravity="center_vertical"
+                tools:text="8567 Photos"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

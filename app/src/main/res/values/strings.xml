@@ -4,4 +4,8 @@
     <string name="ripple">Ripple</string>
     <string name="animation">Animation</string>
     <string name="opencv">OpenCV</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_video">All video</string>
 </resources>

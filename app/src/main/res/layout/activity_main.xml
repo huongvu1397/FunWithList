@@ -22,5 +22,10 @@
         android:text="@string/opencv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn4"
+        android:text="@string/all_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
